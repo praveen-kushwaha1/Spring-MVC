@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Hello Page</title>
+</head>
+<body>
+
+<h1>Spring MVC View Example</h1>
+
+<!--
+    th:text is a Thymeleaf attribute.
+
+    It reads the "message" attribute from the Model
+    and displays its value inside this heading.
+
+    The controller passes this value using:
+    model.addAttribute("message", "...").
+-->
+
+<h2 th:text="${message}">Default Message</h2>
+
+</body>
+</html>

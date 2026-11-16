@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Welcome Page</title>
+</head>
+<body>
+
+<h1>Student Information</h1>
+
+<!-- Reads name from the Model. -->
+<p>
+    Name:
+    <span th:text="${name}">Default Name</span>
+</p>
+
+<!-- Reads course from the Model. -->
+<p>
+    Course:
+    <span th:text="${course}">Default Course</span>
+</p>
+
+<!-- Reads duration from the Model. -->
+<p>
+    Duration:
+    <span th:text="${duration}">Default Duration</span>
+</p>
+
+</body>
+</html>
